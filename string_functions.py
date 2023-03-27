@@ -9,6 +9,7 @@ def to_upper(string):
 
     return "".join(result)
 
+
 def to_lower(string):
     result = []
 
@@ -17,14 +18,15 @@ def to_lower(string):
             result.append(chr(ord(char) + 32))
         else:
             result.append(char)
-            
+
     return "".join(result)
+
 
 def capitalize(string):
     result = ""
 
     if string:
         result += to_upper(string[0])
-        result += to_lower(string[1:])
+    result += to_lower(string[1:])
 
     return result
