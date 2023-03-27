@@ -18,8 +18,16 @@ class TestToUpper(unittest.TestCase):
 
 
 class TestToLower(unittest.TestCase):
-    # your code goes here
-    pass
+    
+    def test_to_lower(self):
+        """
+        Test to_lower method of the string module
+        """
+        self.assertEqual(to_lower('hello'), 'hello')
+        self.assertEqual(to_lower('Hello'), 'hello')
+        self.assertEqual(to_lower(''), '')
+        self.assertEqual(to_lower('HELLO'), 'hello')
+        self.assertEqual(to_lower('helLO2423!'), 'hello2423!')
 
 
 class TestCapitalize(unittest.TestCase):
