@@ -31,9 +31,16 @@ class TestToLower(unittest.TestCase):
 
 
 class TestCapitalize(unittest.TestCase):
-    # your code goes here
-    pass
-
+    
+    def test_capitalize(self):
+        """
+        Test capitalize method of the string module
+        """
+        self.assertEqual(capitalize('hello'), 'Hello')
+        self.assertEqual(capitalize('Hello'), 'Hello')
+        self.assertEqual(capitalize(''), '')
+        self.assertEqual(capitalize('HELLO'), 'Hello')
+        self.assertEqual(capitalize('helLO2423!'), 'Hello2423!')
 
 if __name__ == '__main__':
     unittest.main()
